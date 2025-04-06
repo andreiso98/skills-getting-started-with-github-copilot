@@ -137,6 +137,7 @@ button {
 
 button:hover {
   background-color: #004494;
+  transform: scale(1.05);
 }
 
 .message {
@@ -163,6 +164,14 @@ button:hover {
   border: 1px solid #bee5eb;
 }
 
+.warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 10px;
+  border-radius: 4px;
+}
+
 .hidden {
   display: none;
 }
@@ -172,4 +181,24 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+.participant-info {
+  margin: 20px;
+  padding: 20px;
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.participant-info h4 {
+  margin-bottom: 10px;
+  color: #1e88e5;
+}
+
+.participant-info p {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 14px;
 }
