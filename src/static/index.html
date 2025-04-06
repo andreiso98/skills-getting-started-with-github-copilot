@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mergington High School Activities</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      .hidden {
+        display: none;
+      }
+      .success {
+        color: green;
+      }
+      .error {
+        color: red;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -15,10 +26,9 @@
     <main>
       <section id="activities-container">
         <h3>Available Activities</h3>
-        <div id="activities-list">
-          <!-- Activities will be loaded here -->
-          <p>Loading activities...</p>
-        </div>
+        <ul id="activities-list">
+          <li>Loading activities...</li>
+        </ul>
       </section>
 
       <section id="signup-container">
@@ -31,8 +41,7 @@
           <div class="form-group">
             <label for="activity">Select Activity:</label>
             <select id="activity" required>
-              <option value="">-- Select an activity --</option>
-              <!-- Activity options will be loaded here -->
+              <option value="" disabled selected>-- Select an activity --</option>
             </select>
           </div>
           <button type="submit">Sign Up</button>
